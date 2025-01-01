@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+body {
+  font-family: 'Syne', Arial, sans-serif; /* Apply Syne font */
+  background-color: #0a0a0a; /* Darker background color for pitch-black look */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #444d86;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid #444;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #ff4d4d; /* Red color on hover */
+}
+
+.cell.taken {
+  pointer-events: none;
+  cursor: default;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #444;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
