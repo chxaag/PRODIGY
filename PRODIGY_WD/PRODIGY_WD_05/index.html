@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <h1>Weather Nexus</h1>
+      <p>Access futuristic weather data for any city on Earth.</p>
+    </div>
+  
+    <div class="input">
+      <input type="text" placeholder="Enter City Name" class="input_text">
+      <button class="submit">Analyze Weather</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h1 class="name" id="name">City: Unknown</h1>
+      <p class="temp">Temperature: --°C</p>
+      <p class="desc">Description: --</p>
+      <p class="clouds">Clouds: --%</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
